@@ -15,9 +15,10 @@
 
 
 .navbar {
-  /* background-image: url('./images/desktop/image-hero.jpg'); */
+
   font-family: "Alata", sans-serif;
-  background-color: green;
+  animation: slideDown 2s ease-in-out;
+
   
 }
 
@@ -65,3 +66,79 @@
 }
 
 
+.home-section {
+  background-image: url('./images/desktop/image-hero.jpg');
+  position: relative;
+  top: -9.5rem;
+  z-index: -10;
+}
+
+
+@media screen and (max-width:786px) {
+
+.home-section {
+  background-image:  url('./images/mobile/image-hero.jpg');
+
+  .interactive {
+    background-image:  url('./images/mobile/image-interactive.jpg');
+  }
+
+
+}
+
+
+
+.home-section p {
+  font-size: 3rem;
+  width: auto;
+}
+
+}
+
+.animated-text {
+  animation: slideDown 2s ease-in-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+.img-name {
+  position: relative;
+}
+
+
+
+.img-name h3 {
+  position: absolute;
+  bottom: 0rem;
+  display: block;
+  /* left: 8%; */
+  color: white;
+  font-size: 2rem;
+  font-weight: 100;
+  text-align: center;
+  padding: 0rem 3rem;
+
+}
+
+
+
+.see-button {
+  border: 1px solid black;
+  padding: .5rem 3rem;
+}
+
+.see-button:hover {
+background-color: black;
+color: white;
+}
